@@ -194,8 +194,14 @@
     </header>
 
     <main>
-        <section class="content-left">
-            <img src="logo.png" alt="">
+          <div class="logo-placeholder">
+        <img src="logo pilkades.png" alt="" width="60">
+    </div>
+    <div class="header-text">
+        <h1>Desa Limpung</h1>
+        <p>DESA LIMPUNG</p>
+    </div>
+</div>
             
             <h2>Pemilihan Kepala Desa Limpung</h2>
             <p class="period">PERIODE 2026-2027</p>
