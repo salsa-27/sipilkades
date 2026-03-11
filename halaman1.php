@@ -179,11 +179,14 @@
 
     <header>
         <div class="logo-section">
-            <div class="logo-placeholder"></div>
-            <div class="header-text">
-                <h1>Desa Limpung</h1>
-                <p>DESA LIMPUNG</p>
-            </div>
+    <div class="logo-placeholder">
+        <img src="logo pilkades.png" alt="" width="60">
+    </div>
+    <div class="header-text">
+        <h1>Desa Limpung</h1>
+        <p>DESA LIMPUNG</p>
+    </div>
+</div>
         </div>
         <div style="font-size: 12px; text-align: right;">
             <strong>SISTEM PEMILIHAN KEPALA DESA</strong>

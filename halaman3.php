@@ -23,10 +23,24 @@ body{
 }
 
 .logo{
-    text-align:center;
+    display:flex;
+    align-items:center;
+    gap:15px;
     padding:20px;
     border-bottom:1px solid #555;
 }
+
+.logo img{
+    width:70px;
+}
+
+.judul h2{
+    margin:0;
+    font-size:16px;
+    line-height:20px;
+    font-weight:bold;
+}
+
 
 .menu{
     padding:15px;
@@ -104,9 +118,14 @@ button{
 
 <div class="sidebar">
 
-    <div class="logo">
-        <h3>SISTEM PEMILIHAN<br>KEPALA DESA</h3>
+<div class="logo">
+    <img src="logo pilkades.png" alt="Logo Sipilkades">
+    <div class="judul">
+        <h2>SISTEM</h2>
+        <h2>PEMILIHAN</h2>
+        <h2>KEPALA DESA</h2>
     </div>
+</div>
 
     <div class="menu">Voting</div>
     <div class="menu">Hasil Voting</div>
