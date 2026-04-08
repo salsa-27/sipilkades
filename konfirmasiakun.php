@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
     <title>Konfirmasi Akun</title>
 
     <style>
@@ -17,7 +18,7 @@
 
         .container {
             background: white;
-            width: 450px;
+            width: 440px;
             padding: 30px;
             border-radius: 20px;
             border: 2px solid #2F4156;
@@ -25,20 +26,27 @@
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
         }
-
-        .welcome {
-            font-weight: 600;
-            color: #2f3e4e;
-            margin-bottom: 2px;
+        .foto-user {
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            object-fit: cover;
         }
-
-        h1 {
-            font-size: 28px;
+         h2 {
+            font-size: 18px;
             color: #2f3e4e;
             margin-bottom: 10px;
             margin-top :0;
 
         }
+        h1 {
+            font-size: 25px;
+            color: #2f3e4e;
+            margin-bottom: 10px;
+            margin-top :0;
+
+        }
+
 
         p {
             font-size: 20px;
@@ -48,14 +56,7 @@
             
         }
 
-        .profile img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 25px;
-        }
-
+       
         .button-group {
             display: flex;
             justify-content: center;
@@ -74,31 +75,24 @@
             background-color: #2f3e4e;
             color: white;
         }
-
         .batal {
-            background-color: #d9e1e8;
-            color: #2f3e4e;
+            background-color: #ccd4dc;
+            color: white;
         }
-
-       
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h3 class="welcome">Selamat Datang, Irene Alesya!</h3>
+        <h2>Selamat Datang, Irene Alesya!<h2>
         <h1>Konfirmasi akun Anda!</h1>
         <p>
-            Yakin ingin mengkonfirmasi akun ini? Mohon
-            pastikan data Anda sudah benar.
+        Yakin ingin mengkonfirmasi akun ini? Mohon
+         pastikan data Anda sudah benar. 
         </p>
-
-        <div class="profile">
-            <img src="fotoooo.jpeg" alt="Foto Profil">
-        </div>
-
+        <img src="fotoooo.jpeg" alt="foto user" class="foto-user">
         <div class="button-group">
-            <button class="button konfir">KONFIRMASI</button>
+            <button class="button konfir">KEMBALI</button>
             <button class="button batal">BATAL</button>
         </div>
     </div>
