@@ -214,7 +214,7 @@ body{
             <div class="foto">
                 <i class="hgi hgi-stroke hgi-user"></i>
             </div>
-            <a href="halaman5.html" class="btn">DETAIL</a>
+            <a href="halaman5.php" class="btn">DETAIL</a>
         </div>
 
         <div class="box">
@@ -222,7 +222,7 @@ body{
             <div class="foto">
                 <i class="hgi hgi-stroke hgi-user"></i>
             </div>
-            <a href="halaman5.html" class="btn">DETAIL</a>
+            <a href="halaman5.php" class="btn">DETAIL</a>
         </div>
 
         <div class="box">
@@ -230,7 +230,7 @@ body{
             <div class="foto">
                 <i class="hgi hgi-stroke hgi-user"></i>
             </div>
-            <a href="halaman5.html" class="btn">DETAIL</a>
+            <a href="halaman5.php" class="btn">DETAIL</a>
         </div>
 
     </div>
