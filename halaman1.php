@@ -180,7 +180,7 @@
     <header>
         <div class="logo-section">
     <div class="logo-placeholder">
-        <img src="logo pilkades.png" alt="" width="60">
+        <img src="logo voting.png" alt="">
     </div>
     <div class="header-text">
         <h1>Desa Limpung</h1>
