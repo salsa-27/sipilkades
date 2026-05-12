@@ -82,6 +82,10 @@ body{
 .main{
     flex:1;
     background:#E8F2F8;
+    margin-left:220px;
+    display:flex;
+    justify-content;center;
+    align-items:center;
     padding:40px;
 }
 
@@ -96,8 +100,8 @@ body{
     background:white;
     border-radius:12px;
     padding:30px;
-    width:800px;
-    margin:auto;
+    width:100%;
+    max-width:900px;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
     border:1px solid #ccc;
 }
