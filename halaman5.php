@@ -82,7 +82,7 @@ body{
 .main{
     flex:1;
     background:#E8F2F8;
-    padding:100px;
+    padding:40px;
 }
 
 .title{
@@ -105,7 +105,7 @@ body{
 .content{
     display:flex;
     gap:30px;
-    align-items:flex-start;
+    align-items:center;
 }
 
 .photo img{
