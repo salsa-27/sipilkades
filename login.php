@@ -4,8 +4,6 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Hasil Voting</title>
-<!-- Link icon dari Font Awesome -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 <style>
   body {
     font-family: Arial, sans-serif;
@@ -68,12 +66,13 @@
     height: 100px;
     border-radius: 50px;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
   }
 
   .name {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 150px;
   border-bottom: 1px solid #000;
   padding-bottom: 5px;
@@ -81,8 +80,9 @@
 
   .vote {
     font-weight: bold;
-    font-size: 14px;
-    margin-bottom: 5px;
+    font-size: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
   }
 
   .percentage {

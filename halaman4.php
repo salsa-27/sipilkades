@@ -170,6 +170,7 @@
 </style>
 </head>
 <body>
+<<<<<<< HEAD
   <div class="sidebar">
     <div class="logo">
       <img src="logo.png" alt="Logo Sistem Pemilihan Kepala Desa" />
@@ -235,5 +236,8 @@
       LOG OUT
     </div>
   </div>
+=======
+       
+>>>>>>> b550ea684e70b8f0e2060bb4197425256ab3e8ed
 </body>
 </html>
