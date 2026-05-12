@@ -10,42 +10,78 @@ body{
     margin:0;
 }
 
-.main{
-    background:#E8F2F8;
-    min-height:100vh;
-    padding:40px;
-}
-
 .container{
     display:flex;
 }
 
 .sidebar{
     width:220px;
-    background:#3f5d7d;
-    color:white;
     height:100vh;
-    padding:20px;
+    background:#2F4156;
+    color:white;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
 }
 
-.sidebar h3{
+.logo{
+    display:flex;
+    gap:12px;
+    padding:12px;
+    border-bottom:1px solid #567C8D;
+    background:#C8D9E6;
+}
+
+.logo img{
+    width:70px;
+}
+
+.judul h2{
     font-size:14px;
-    margin-bottom:30px;
+    line-height:16px;
+    margin:0;
+    color:#2F4156;
+    position:relative;
+    top:14px;
 }
 
 .menu{
-    margin-top:40px;
+    padding:22px 22px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:#C8D9E6;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
 }
 
-.menu a{
-    display:block;
+.menu:first-of-type{
+    margin-top:30px;
+}
+
+.menu:hover{
+    background:#567C8D;
     color:white;
-    text-decoration:none;
-    margin:15px 0;
+}
+
+.logout{
+    margin-top:auto;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    color:#F5EFEB;
+    font-size:18px;
+    font-weight:500;
 }
 
 .main{
     flex:1;
+    background:#E8F2F8;
     padding:40px;
 }
 
@@ -58,53 +94,62 @@ body{
 
 .card{
     background:white;
-    border-radius:10px;
+    border-radius:12px;
     padding:30px;
-    width:750px;
+    width:800px;
     margin:auto;
-    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    border:1px solid #ccc;
 }
 
 .content{
     display:flex;
-    gap:25px;
+    gap:30px;
+    align-items:flex-start;
 }
 
 .photo img{
-    width:180px;
-    height: 90;
-    border-radius:8px;
+    width:200px;
+    height:100%;
+    object-fit:cover;
+    border-radius:10px; 
 }
 
 .info h2{
-    margin:0;
+    margin-bottom:5px;
 }
 
 .info p{
+    margin-top:0;
     font-size:14px;
+    color:gray;
+}
+
+hr{
+    margin:15px 0;
 }
 
 .button-area{
-    margin-top:20px;
-    text-align: center;
-    
+    margin-top:25px;
+    text-align:center;
 }
 
 button{
-    padding:10px 18px;
+    padding:10px 20px;
     border:none;
-    border-radius:6px;
+    border-radius:8px;
     cursor:pointer;
-    margin: 0 25px;
+    margin: 0 10px;
+    font-weight:bold;
 }
 
 .vote{
-    background:#6c8fb3;
+    background:#4a5d73;
     color:white;
 }
 
 .back{
-    background:#4a6d90;
+    background:#4a5d73;
     color:white;
 }
 
@@ -117,20 +162,33 @@ button{
 
 <div class="sidebar">
 
-<h3>SISTEM PEMILIHAN<br>KEPALA DESA</h3>
+    <div class="logo">
+        <img src="logo pilkades.png">
+        <div class="judul">
+            <h2>SISTEM</h2>
+            <h2>PEMILIHAN</h2>
+            <h2>KEPALA DESA</h2>
+        </div>
+    </div>
 
-<div class="menu">
-<a href="#">VOTING</a>
-<a href="#">HASIL VOTING</a>
+    <div class="menu">
+        <span>Voting</span>
+    </div>
+
+    <div class="menu">
+        <span>Hasil Voting</span>
+    </div>
+
+    <div class="logout">
+        <span>Log Out</span>
+    </div>
+
 </div>
-
-</div>
-
 
 <div class="main">
 
 <div class="title">
-DESKRIPSI KANDIDAT 3
+DESKRIPSI KANDIDAT 2
 </div>
 
 <div class="card">
@@ -138,12 +196,12 @@ DESKRIPSI KANDIDAT 3
 <div class="content">
 
 <div class="photo">
-<img src=>
+<img src="jamals.png">
 </div>
 
 <div class="info">
 
-<h2>JAMAL</h2>
+<h2>AGUS</h2>
 <p>Calon Kepala Desa 2026-2031</p>
 
 <hr>
@@ -168,7 +226,8 @@ melalui pelayanan yang adil, transparan, dan berkelanjutan.
 <button class="back">Kembali</button>
 </div>
 
-</div>///
+</div>
+
 </div>
 
 </div>
