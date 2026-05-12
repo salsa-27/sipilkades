@@ -2,11 +2,12 @@
 <html>
 <head>
 <title>Deskripsi Kandidat</title>
+
 <style>
 
 body{
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background:#f5f5f5;
     margin:0;
 }
 
@@ -84,16 +85,9 @@ body{
     background:#E8F2F8;
     margin-left:220px;
     display:flex;
-    justify-content;center;
+    justify-content:center;
     align-items:center;
     padding:40px;
-}
-
-.title{
-    text-align:center;
-    font-size:28px;
-    font-weight:bold;
-    margin-bottom:30px;
 }
 
 .card{
@@ -104,6 +98,13 @@ body{
     max-width:900px;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
     border:1px solid #ccc;
+}
+
+.title{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:30px;
 }
 
 .content{
@@ -143,7 +144,7 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
-    margin: 0 10px;
+    margin:0 10px;
     font-weight:bold;
 }
 
@@ -168,6 +169,7 @@ button{
 
     <div class="logo">
         <img src="logo pilkades.png">
+
         <div class="judul">
             <h2>SISTEM</h2>
             <h2>PEMILIHAN</h2>
@@ -191,11 +193,11 @@ button{
 
 <div class="main">
 
+<div class="card">
+
 <div class="title">
 DESKRIPSI KANDIDAT 2
 </div>
-
-<div class="card">
 
 <div class="content">
 
@@ -211,12 +213,14 @@ DESKRIPSI KANDIDAT 2
 <hr>
 
 <h3>Visi:</h3>
+
 <p>
 Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
 melalui pelayanan yang adil, transparan, dan berkelanjutan.
 </p>
 
 <h3>Misi:</h3>
+
 <ol>
 <li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
 <li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
