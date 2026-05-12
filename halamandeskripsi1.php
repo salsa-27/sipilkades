@@ -2,11 +2,12 @@
 <html>
 <head>
 <title>Deskripsi Kandidat</title>
+
 <style>
 
 body{
     font-family: Arial, sans-serif;
-    background: #f5f5f5;
+    background:#f5f5f5;
     margin:0;
 }
 
@@ -16,31 +17,74 @@ body{
 
 .sidebar{
     width:220px;
-    background:#3f5d7d;
-    color:white;
     height:100vh;
-    padding:20px;
+    background:#2F4156;
+    color:white;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
 }
 
-.sidebar h3{
+.logo{
+    display:flex;
+    gap:12px;
+    padding:12px;
+    border-bottom:1px solid #567C8D;
+    background:#C8D9E6;
+}
+
+.logo img{
+    width:70px;
+}
+
+.judul h2{
     font-size:14px;
-    margin-bottom:30px;
+    line-height:16px;
+    margin:0;
+    color:#2F4156;
+    position:relative;
+    top:14px;
 }
 
 .menu{
-    margin-top:40px;
+    padding:22px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:#C8D9E6;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
 }
 
-.menu a{
-    display:block;
+.menu:first-of-type{
+    margin-top:30px;
+}
+
+.menu:hover{
+    background:#567C8D;
     color:white;
-    text-decoration:none;
-    margin:15px 0;
 }
 
-.main{
+.logout{
+    margin-top:auto;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    color:#F5EFEB;
+    font-size:18px;
+    font-weight:500;
+}
+
+.main-content{
     flex:1;
+    margin-left:220px;
     background:#E8F2F8;
+    min-height:100vh;
     padding:40px;
 }
 
@@ -48,15 +92,21 @@ body{
     text-align:center;
     font-size:28px;
     font-weight:bold;
+    color:#2F4156;
     margin-bottom:30px;
+}
+
+.main{
+    display:flex;
+    justify-content:center;
 }
 
 .card{
     background:white;
     border-radius:12px;
-    padding:30px;
-    width:800px;
-    margin:auto;
+    padding:25px;
+    width:100%;
+    max-width:900px;
     box-shadow:0 2px 8px rgba(0,0,0,0.1);
     border:1px solid #ccc;
 }
@@ -68,24 +118,43 @@ body{
 }
 
 .photo img{
-    width:200px;
-    height:100%;
-    object-fit:cover;
+    width:230px;
     border-radius:10px;
+    object-fit:cover;
+}
+
+.info{
+    flex:1;
 }
 
 .info h2{
+    margin-top:0;
     margin-bottom:5px;
+    font-size:28px;
 }
 
 .info p{
     margin-top:0;
     font-size:14px;
-    color:gray;
+    color:black;
 }
 
 hr{
     margin:15px 0;
+}
+
+.info h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+ol{
+    padding-left:20px;
+}
+
+ol li{
+    margin-bottom:8px;
+    font-size:16px;
 }
 
 .button-area{
@@ -98,18 +167,23 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
-    margin: 0 10px;
+    margin:0 10px;
     font-weight:bold;
+    font-size:15px;
 }
 
 .vote{
-    background:#4a5d73;
+    background:#4A5D73;
     color:white;
 }
 
 .back{
-    background:#4a5d73;
+    background:#4A5D73;
     color:white;
+}
+
+button:hover{
+    opacity:0.9;
 }
 
 </style>
@@ -119,65 +193,86 @@ button{
 
 <div class="container">
 
-<div class="sidebar">
+    <div class="sidebar">
 
-<h3>SISTEM PEMILIHAN<br>KEPALA DESA</h3>
+        <div class="logo">
+            <img src="logo pilkades.png">
 
-<div class="menu">
-<a href="#">VOTING</a>
-<a href="#">HASIL VOTING</a>
-</div>
+            <div class="judul">
+                <h2>SISTEM</h2>
+                <h2>PEMILIHAN</h2>
+                <h2>KEPALA DESA</h2>
+            </div>
+        </div>
 
-</div>
+        <div class="menu">
+            <span>Voting</span>
+        </div>
 
-<div class="main">
+        <div class="menu">
+            <span>Hasil Voting</span>
+        </div>
 
-<div class="title">
-DESKRIPSI KANDIDAT 2
-</div>
+        <div class="logout">
+            <span>Log Out</span>
+        </div>
 
-<div class="card">
+    </div>
 
-<div class="content">
+    <div class="main-content">
 
-<div class="photo">
-<img src="bagas.jpeg">
-</div>
+        <div class="title">
+            DESKRIPSI KANDIDAT 3
+        </div>
 
-<div class="info">
+        <div class="main">
 
-<h2>BAGAS</h2>
-<p>Calon Kepala Desa 2026-2031</p>
+            <div class="card">
 
-<hr>
+                <div class="content">
 
-<h3>Visi:</h3>
-<p>
-Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
-melalui pelayanan yang adil, transparan, dan berkelanjutan.
-</p>
+                    <div class="photo">
+                        <img src="bagas.jpeg">
+                    </div>
 
-<h3>Misi:</h3>
-<ol>
-<li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
-<li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
-<li>Membangun infrastruktur desa secara merata.</li>
-<li>Meningkatkan kesejahteraan dan partisipasi masyarakat.</li>
-<li>Menjaga keamanan, budaya, dan kerukunan warga.</li>
-</ol>
+                    <div class="info">
 
-<div class="button-area">
-<button class="vote">Vote Sekarang</button>
-<button class="back">Kembali</button>
-</div>
+                        <h2>BAGAS</h2>
+                        <p>Calon Kepala Desa 2026-2031</p>
 
-</div>
+                        <hr>
 
-</div>
+                        <h3>Visi:</h3>
 
-</div>
+                        <p>
+                        Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
+                        melalui pelayanan yang adil, transparan, dan berkelanjutan.
+                        </p>
 
-</div>
+                        <h3>Misi:</h3>
+
+                        <ol>
+                            <li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
+                            <li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
+                            <li>Membangun infrastruktur desa secara merata.</li>
+                            <li>Meningkatkan kesejahteraan dan partisipasi masyarakat.</li>
+                            <li>Menjaga keamanan, budaya, dan kerukunan warga.</li>
+                        </ol>
+
+                        <div class="button-area">
+                            <button class="vote">Vote Sekarang</button>
+                            <button class="back">Kembali</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
 
