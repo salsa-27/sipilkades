@@ -58,7 +58,7 @@
     background-color: #fff;
     width: 200px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
@@ -66,16 +66,18 @@
   .card img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
+    border-radius: 50px;
     object-fit: cover;
     margin-bottom: 10px;
   }
 
   .name {
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 150px;
+  border-bottom: 1px solid #000;
+  padding-bottom: 5px;
+}
 
   .vote {
     font-weight: bold;
@@ -116,19 +118,19 @@
   <div class="cards">
     
     <div class="card img">
-      <img src="images/agus" alt= "Agus"/>
+      <img src="agus.jpeg" alt= "Agus"/>
       <div class="name">AGUS</div>
       <div class="vote">0% <br> 0 Votes</div>
     </div>
     
     <div class="card img">
-      <img src="images/bagas" alt="Bagas"/>
+      <img src="bagas.jpeg" alt="Bagas"/>
       <div class="name">BAGAS</div>
       <div class="vote">0% <br> 0 Votes</div>
     </div>
     
     <div class="card img">
-      <img src="images/jamals" alt="Jamal"/>
+      <img src="jamals.png" alt="Jamal"/>
       <div class="name">JAMAL</div>
       <div class="vote">0% <br> 0 Votes</div>
     </div>
