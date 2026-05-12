@@ -3,7 +3,7 @@
 include "./config.php";
 
 // ambil data dari form (sesuai name di HTML kamu)
-$nik = $_POST['nik'];
+$nik = $_POST['NIK'];
 $password = $_POST['kode-pilih'];
 
 echo $nik;
