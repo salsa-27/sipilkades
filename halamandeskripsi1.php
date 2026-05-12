@@ -222,7 +222,7 @@ button:hover{
     <div class="main-content">
 
         <div class="title">
-            DESKRIPSI KANDIDAT 3
+            DESKRIPSI KANDIDAT 1
         </div>
 
         <div class="main">
