@@ -48,7 +48,7 @@ body{
 }
 
 .menu{
-    padding:22px 22px;
+    padding:22px;
     cursor:pointer;
     display:flex;
     align-items:center;
@@ -80,58 +80,81 @@ body{
     font-weight:500;
 }
 
-.main{
+.main-content{
     flex:1;
-    background:#E8F2F8;
     margin-left:220px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    background:#E8F2F8;
+    min-height:100vh;
     padding:40px;
-}
-
-.card{
-    background:white;
-    border-radius:12px;
-    padding:30px;
-    width:100%;
-    max-width:900px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    border:1px solid #ccc;
 }
 
 .title{
     text-align:center;
     font-size:28px;
     font-weight:bold;
+    color:#2F4156;
     margin-bottom:30px;
+}
+
+.main{
+    display:flex;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    width:100%;
+    max-width:900px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    border:1px solid #ccc;
 }
 
 .content{
     display:flex;
     gap:30px;
-    align-items:center;
+    align-items:flex-start;
 }
 
 .photo img{
-    width:200px;
-    height:100%;
+    width:230px;
+    border-radius:10px;
     object-fit:cover;
-    border-radius:10px; 
+}
+
+.info{
+    flex:1;
 }
 
 .info h2{
+    margin-top:0;
     margin-bottom:5px;
+    font-size:28px;
 }
 
 .info p{
     margin-top:0;
     font-size:14px;
-    color:gray;
+    color:black;
 }
 
 hr{
     margin:15px 0;
+}
+
+.info h3{
+    font-size:20px;
+    margin-bottom:10px;
+}
+
+ol{
+    padding-left:20px;
+}
+
+ol li{
+    margin-bottom:8px;
+    font-size:16px;
 }
 
 .button-area{
@@ -146,16 +169,21 @@ button{
     cursor:pointer;
     margin:0 10px;
     font-weight:bold;
+    font-size:15px;
 }
 
 .vote{
-    background:#4a5d73;
+    background:#4A5D73;
     color:white;
 }
 
 .back{
-    background:#4a5d73;
+    background:#4A5D73;
     color:white;
+}
+
+button:hover{
+    opacity:0.9;
 }
 
 </style>
@@ -165,85 +193,86 @@ button{
 
 <div class="container">
 
-<div class="sidebar">
+    <div class="sidebar">
 
-    <div class="logo">
-        <img src="logo pilkades.png">
+        <div class="logo">
+            <img src="logo pilkades.png">
 
-        <div class="judul">
-            <h2>SISTEM</h2>
-            <h2>PEMILIHAN</h2>
-            <h2>KEPALA DESA</h2>
+            <div class="judul">
+                <h2>SISTEM</h2>
+                <h2>PEMILIHAN</h2>
+                <h2>KEPALA DESA</h2>
+            </div>
         </div>
+
+        <div class="menu">
+            <span>Voting</span>
+        </div>
+
+        <div class="menu">
+            <span>Hasil Voting</span>
+        </div>
+
+        <div class="logout">
+            <span>Log Out</span>
+        </div>
+
     </div>
 
-    <div class="menu">
-        <span>Voting</span>
+    <div class="main-content">
+
+        <div class="title">
+            DESKRIPSI KANDIDAT 3
+        </div>
+
+        <div class="main">
+
+            <div class="card">
+
+                <div class="content">
+
+                    <div class="photo">
+                        <img src="jamals.png">
+                    </div>
+
+                    <div class="info">
+
+                        <h2>JAMAL</h2>
+                        <p>Calon Kepala Desa 2026-2031</p>
+
+                        <hr>
+
+                        <h3>Visi:</h3>
+
+                        <p>
+                        Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
+                        melalui pelayanan yang adil, transparan, dan berkelanjutan.
+                        </p>
+
+                        <h3>Misi:</h3>
+
+                        <ol>
+                            <li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
+                            <li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
+                            <li>Membangun infrastruktur desa secara merata.</li>
+                            <li>Meningkatkan kesejahteraan dan partisipasi masyarakat.</li>
+                            <li>Menjaga keamanan, budaya, dan kerukunan warga.</li>
+                        </ol>
+
+                        <div class="button-area">
+                            <button class="vote">Vote Sekarang</button>
+                            <button class="back">Kembali</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-
-    <div class="menu">
-        <span>Hasil Voting</span>
-    </div>
-
-    <div class="logout">
-        <span>Log Out</span>
-    </div>
-
-</div>
-
-<div class="main">
-    <div class="title">
-DESKRIPSI KANDIDAT 2
-</div>
-
-<div class="card">
-
-<div class="title">
-DESKRIPSI KANDIDAT 2
-</div>
-
-<div class="content">
-
-<div class="photo">
-<img src="jamals.png">
-</div>
-
-<div class="info">
-
-<h2>AGUS</h2>
-<p>Calon Kepala Desa 2026-2031</p>
-
-<hr>
-
-<h3>Visi:</h3>
-
-<p>
-Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
-melalui pelayanan yang adil, transparan, dan berkelanjutan.
-</p>
-
-<h3>Misi:</h3>
-
-<ol>
-<li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
-<li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
-<li>Membangun infrastruktur desa secara merata.</li>
-<li>Meningkatkan kesejahteraan dan partisipasi masyarakat.</li>
-<li>Menjaga keamanan, budaya, dan kerukunan warga.</li>
-</ol>
-
-<div class="button-area">
-<button class="vote">Vote Sekarang</button>
-<button class="back">Kembali</button>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
 
 </div>
 

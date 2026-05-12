@@ -11,7 +11,7 @@
 
 <style>
 
-*{
+{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -130,8 +130,6 @@ body{
     margin:25px 0;
     color:#567C8D;
 }
-
-/* 🔥 tombol detail versi link */
 .btn{
     display:block;
     margin:60px auto 0;
