@@ -257,18 +257,16 @@ main{
 
         <p>Silahkan masukkan data yang sesuai!</p>
 
-        <form>
+        <form action="aksi-login.php" method="POST">
 
             <div class="form-group">
                 <label>NIK</label>
-                <input type="text" placeholder="Masukkan NIK">
+                <input type="text" id="NIK" name="NIK" placeholder="Masukkan NIK">
             </div>
-
             <div class="form-group">
                 <label>Kode Pilih</label>
-                <input type="password" placeholder="Masukkan kode pilih">
+                <input type="password" id="kode-pilih" name="kode-pilih" placeholder="Masukkan kode pilih">
             </div>
-
             <button type="submit" class="btn-login">
                 Login
             </button>
