@@ -82,7 +82,7 @@ body{
 .main{
     flex:1;
     background:#E8F2F8;
-    padding:40px;
+    padding:100px;
 }
 
 .title{
