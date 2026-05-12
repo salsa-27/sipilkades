@@ -1,4 +1,3 @@
-```html id="g7m1qe"
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -239,7 +238,7 @@ main{
 
     <section class="content-left">
 
-        <img src="logo voting.png">
+        <img src="logo limpung.png">
 
         <h2>Pemilihan Kepala Desa Limpung</h2>
 
@@ -284,4 +283,3 @@ main{
 
 </body>
 </html>
-```
