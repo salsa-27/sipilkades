@@ -2,12 +2,11 @@
 <html>
 <head>
 <title>Deskripsi Kandidat</title>
-
 <style>
 
 body{
     font-family: Arial, sans-serif;
-    background:#f5f5f5;
+    background: #f5f5f5;
     margin:0;
 }
 
@@ -17,87 +16,32 @@ body{
 
 .sidebar{
     width:220px;
-    height:100vh;
-    background:#2F4156;
+    background:#3f5d7d;
     color:white;
-    position:fixed;
-    display:flex;
-    flex-direction:column;
-    gap:2px;
+    height:100vh;
+    padding:20px;
 }
 
-.logo{
-    display:flex;
-    gap:12px;
-    padding:12px;
-    border-bottom:1px solid #567C8D;
-    background:#C8D9E6;
-}
-
-.logo img{
-    width:70px;
-}
-
-.judul h2{
+.sidebar h3{
     font-size:14px;
-    line-height:16px;
-    margin:0;
-    color:#2F4156;
-    position:relative;
-    top:14px;
+    margin-bottom:30px;
 }
 
 .menu{
-    padding:22px 22px;
-    cursor:pointer;
-    display:flex;
-    align-items:center;
-    gap:14px;
-    color:#C8D9E6;
-    font-size:18px;
-    font-weight:500;
-    transition:0.3s;
+    margin-top:40px;
 }
 
-.menu:first-of-type{
-    margin-top:30px;
-}
-
-.menu:hover{
-    background:#567C8D;
+.menu a{
+    display:block;
     color:white;
-}
-
-.logout{
-    margin-top:auto;
-    padding:20px;
-    display:flex;
-    align-items:center;
-    gap:14px;
-    cursor:pointer;
-    color:#F5EFEB;
-    font-size:18px;
-    font-weight:500;
+    text-decoration:none;
+    margin:15px 0;
 }
 
 .main{
     flex:1;
     background:#E8F2F8;
-    margin-left:220px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
     padding:40px;
-}
-
-.card{
-    background:white;
-    border-radius:12px;
-    padding:30px;
-    width:100%;
-    max-width:900px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
-    border:1px solid #ccc;
 }
 
 .title{
@@ -107,10 +51,20 @@ body{
     margin-bottom:30px;
 }
 
+.card{
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    width:800px;
+    margin:auto;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    border:1px solid #ccc;
+}
+
 .content{
     display:flex;
     gap:30px;
-    align-items:center;
+    align-items:flex-start;
 }
 
 .photo img{
@@ -144,7 +98,7 @@ button{
     border:none;
     border-radius:8px;
     cursor:pointer;
-    margin:0 10px;
+    margin: 0 10px;
     font-weight:bold;
 }
 
@@ -167,42 +121,27 @@ button{
 
 <div class="sidebar">
 
-    <div class="logo">
-        <img src="logo pilkades.png">
+<h3>SISTEM PEMILIHAN<br>KEPALA DESA</h3>
 
-        <div class="judul">
-            <h2>SISTEM</h2>
-            <h2>PEMILIHAN</h2>
-            <h2>KEPALA DESA</h2>
-        </div>
-    </div>
-
-    <div class="menu">
-        <span>Voting</span>
-    </div>
-
-    <div class="menu">
-        <span>Hasil Voting</span>
-    </div>
-
-    <div class="logout">
-        <span>Log Out</span>
-    </div>
+<div class="menu">
+<a href="#">VOTING</a>
+<a href="#">HASIL VOTING</a>
+</div>
 
 </div>
 
 <div class="main">
 
-<div class="card">
-
 <div class="title">
 DESKRIPSI KANDIDAT 2
 </div>
 
+<div class="card">
+
 <div class="content">
 
 <div class="photo">
-<img src="jamals.png">
+<img src="agus.jpeg">
 </div>
 
 <div class="info">
@@ -213,14 +152,12 @@ DESKRIPSI KANDIDAT 2
 <hr>
 
 <h3>Visi:</h3>
-
 <p>
 Mewujudkan desa yang maju, mandiri, sejahtera, dan harmonis
 melalui pelayanan yang adil, transparan, dan berkelanjutan.
 </p>
 
 <h3>Misi:</h3>
-
 <ol>
 <li>Meningkatkan pelayanan publik yang cepat dan transparan.</li>
 <li>Mengembangkan potensi desa dan ekonomi masyarakat.</li>
