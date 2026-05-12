@@ -238,7 +238,7 @@ main{
 
     <section class="content-left">
 
-        <img src="logo limpung.png">
+        <img src="logo voting.png">
 
         <h2>Pemilihan Kepala Desa Limpung</h2>
 
