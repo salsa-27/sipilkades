@@ -180,7 +180,7 @@
     <header>
         <div class="logo-section">
     <div class="logo-placeholder">
-        <img src="logo pilkades.png" alt="" width="60">
+        <img src="logo voting.png" alt="">
     </div>
     <div class="header-text">
         <h1>Desa Limpung</h1>
@@ -194,6 +194,7 @@
     </header>
 
     <main>
+<<<<<<< Updated upstream
           <div class="logo-placeholder">
         <img src="logo pilkades.png" alt="" width="60">
     </div>
@@ -202,6 +203,10 @@
         <p>DESA LIMPUNG</p>
     </div>
 </div>
+=======
+        <section class="content-left">
+            <img src="logo voting.png" alt="">
+>>>>>>> Stashed changes
             
             <h2>Pemilihan Kepala Desa Limpung</h2>
             <p class="period">PERIODE 2026-2027</p>
