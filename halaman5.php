@@ -192,6 +192,9 @@ button{
 </div>
 
 <div class="main">
+    <div class="title">
+DESKRIPSI KANDIDAT 2
+</div>
 
 <div class="card">
 
