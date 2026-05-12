@@ -136,7 +136,7 @@ body{
 .info p{
     margin-top:0;
     font-size:14px;
-    color:gray;
+    color:black;
 }
 
 hr{
