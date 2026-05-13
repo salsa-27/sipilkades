@@ -9,8 +9,9 @@ $password = $_POST['kode-pilih'];
 echo $nik;
 echo $password;
 exit();
+
 // query cari user
-$query = "SELECT * FROM users WHERE email='$email'";
+$query = "SELECT * FROM users WHERE NIK='$nik'";
 $result = $conn->query($query);
 
 // ambil data
