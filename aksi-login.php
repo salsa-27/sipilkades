@@ -10,17 +10,18 @@ $password = $_POST['kode-pilih'];
 // echo $password;
 // exit();
 
-echo $nik;
-echo $password;
+// echo $nik;
+// echo $password;
 
 $query = "SELECT * FROM users WHERE username ='".$_POST['NIK']."'";
 $result = $conn->query($query);
-exit();
+// exit();
 
+// echo $result->num_rows;
 // exit();
 // ambil data
 $row = $result->fetch_assoc();
-exit();
+// exit();
 
 // cek apakah email ditemukan
 if ($result->num_rows == 0) {
@@ -30,9 +31,9 @@ if ($result->num_rows == 0) {
 } else {
   if ($_POST['inputan_password'] == $row['password']) {
     // echo "Anda berhasil login";
-    header("location:main.php");
+    header("location:halaman2.php");
   } else {
     // echo "Password anda salah";
-    header("location:index.php");
+    header("location:dataasalah.php");
   }
 }
