@@ -6,9 +6,12 @@ include "./config.php";
 $nik = $_POST['NIK'];
 $password = $_POST['kode-pilih'];
 
+// echo $nik;
+// echo $password;
+// exit();
+
 echo $nik;
 echo $password;
-
 
 // query cari user
 $query = "SELECT * FROM users WHERE username='$nik'";
@@ -16,9 +19,10 @@ $result = $conn->query($query);
 var_dump($result);
 exit();
 
+// exit();
 // ambil data
 $row = $result->fetch_assoc();
-
+exit();
 // cek apakah email ditemukan
 if ($result->num_rows == 0) {
 
