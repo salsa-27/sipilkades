@@ -216,7 +216,6 @@ main{
             <h1>Desa Limpung</h1>
             <p>DESA LIMPUNG</p>
         </div>
-
     </div>
 
     <div class="header-right">
