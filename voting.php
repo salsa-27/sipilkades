@@ -82,7 +82,6 @@
     font-weight: bold;
     font-size: 25px;
     margin-bottom: 20px;
-    margin-top: 10px;
   }
 
   .percentage {
@@ -90,7 +89,6 @@
     color: #555;
   }
 
- 
   .logout {
     position: absolute;
     bottom: 20px;
