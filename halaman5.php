@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Deskripsi Kandidat</title>
+<title>Deskripsi 3</title>
 
 <style>
 
