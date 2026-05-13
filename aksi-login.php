@@ -21,6 +21,7 @@ exit();
 // ambil data
 $row = $result->fetch_assoc();
 exit();
+
 // cek apakah email ditemukan
 if ($result->num_rows == 0) {
 
