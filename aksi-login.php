@@ -14,7 +14,7 @@ echo $password;
 $query = "SELECT * FROM users WHERE username='$nik'";
 $result = $conn->query($query);
 var_dump($result);
-exict();
+exit();
 
 // ambil data
 $row = $result->fetch_assoc();
