@@ -11,7 +11,7 @@ echo $password;
 
 
 // query cari user
-$query = "SELECT * FROM users WHERE NIK='$nik'";
+$query = "SELECT * FROM users WHERE username='$nik'";
 $result = $conn->query($query);
 var_dump($result);
 exit();
