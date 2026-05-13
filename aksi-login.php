@@ -34,6 +34,6 @@ if ($result->num_rows == 0) {
     header("location:halaman2.php");
   } else {
     // echo "Password anda salah";
-    header("location:dataasalah.php");
+    header("location:datasalah.php");
   }
 }
