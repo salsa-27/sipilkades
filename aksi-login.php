@@ -13,8 +13,8 @@ echo $password;
 // query cari user
 $query = "SELECT * FROM users WHERE username='$nik'";
 $result = $conn->query($query);
-echo $result;
-exit();
+var_dump($result);
+exict();
 
 // ambil data
 $row = $result->fetch_assoc();
