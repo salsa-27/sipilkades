@@ -45,10 +45,10 @@
         }
 
         p {
-            font-size: 22px;
-            color: #2f3e4e;
-            margin-bottom: 10px;
-            margin-top: 0;
+            font-size: 17px;
+            color: #232121;
+            line-height: 0;
+            margin-bottom: 20px;
             
         }
 
@@ -81,11 +81,9 @@
         <div class="icon-warning i">
         <i class="hgi hgi-stroke hgi-alert-02"></i>
         </div>
-        <p>
-           Data tidak ditemukan!
-           pastikan NIK atau kode Pilih yang kamu masukkan 
-           sudah benar
-        </p>
+        <p>Data tidak ditemukan!</p>
+        <p>pastikan NIK atau kode Pilih yang kamu masukkan</p>
+        <p>sudah benar</p>
 
 
         <div class="button-group">
