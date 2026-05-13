@@ -214,7 +214,7 @@
             <p>Silahkan masukkan data yang sesuai!</p>
 
             <form>
-                <div class="form-group">
+                <from class="form-group" action="aksi-login.php" method="POST">
                     <label for="nik">NIK</label>
                     <input type="text" id="nik" placeholder="Masukkan NIK">
                 </div>
