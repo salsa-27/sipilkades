@@ -3,12 +3,18 @@
 include "./config.php";
 
 // ambil data dari form (sesuai name di HTML kamu)
-$email = $_POST['inputan_NIK'];
-$password = $_POST['inputan_kode pilh'];
+$nik = $_POST['NIK'];
+$password = $_POST['kode-pilih'];
+
+echo $nik;
+echo $password;
+
 
 // query cari user
-$query = "SELECT * FROM users WHERE email='$email'";
+$query = "SELECT * FROM users WHERE username='$nik'";
 $result = $conn->query($query);
+var_dump($result);
+exit();
 
 // ambil data
 $row = $result->fetch_assoc();
