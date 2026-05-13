@@ -14,7 +14,7 @@ echo $nik;
 echo $password;
 
 // query cari user
-$query = "SELECT * FROM users WHERE username ='$nik'";
+$query = "SELECT * FROM users WHERE username ='".$_POST['NIK']'";
 $result = $conn->query($query);
 exit();
 
