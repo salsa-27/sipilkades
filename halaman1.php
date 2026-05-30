@@ -167,33 +167,6 @@ main{
         line-height:48px;
     }
 }
-.popup{
-    display:none;
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.5);
-    justify-content:center;
-    align-items:center;
-    z-index:9999;
-}
-
-.popup-box{
-    background:white;
-    width:450px;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
-}
-
-.button-group{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    margin-top:20px;
-}
 </style>
 </head>
 <body>
@@ -260,101 +233,6 @@ main{
 </div>
 
 </main>
-<!-- POPUP KONFIRMASI -->
 
-<div id="popup-konfirmasi" class="popup">
-
-    <div class="popup-box">
-
-        <h3>Selamat Datang, Irene Alesya!</h3>
-
-        <h1>Konfirmasi akun Anda!</h1>
-
-        <p>
-            Yakin ingin mengkonfirmasi akun ini?
-            Mohon pastikan data Anda sudah benar.
-        </p>
-
-        <img src="fotoooo.jpeg" width="100">
-
-        <div class="button-group">
-
-            <button
-            onclick="window.location.href='halaman3.php'">
-            KONFIRMASI
-            </button>
-
-            <button
-            onclick="tutupKonfirmasi()">
-            BATAL
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-
-
-<!-- POPUP DATA SALAH -->
-
-<div id="popup-salah" class="popup">
-
-    <div class="popup-box">
-
-        <h2>⚠</h2>
-
-        <p>Data tidak ditemukan!</p>
-
-        <p>
-            Pastikan NIK atau kode pilih
-            yang kamu masukkan sudah benar
-        </p>
-
-        <button
-        onclick="tutupSalah()">
-        COBA LAGI
-        </button>
-
-    </div>
-
-</div>
-
-
-<script>
-
-function tutupKonfirmasi(){
-    document.getElementById("popup-konfirmasi").style.display="none";
-}
-
-function tutupSalah(){
-    document.getElementById("popup-salah").style.display="none";
-}
-
-</script>
-
-<?php
-
-if(isset($_GET['status'])){
-
-    if($_GET['status']=="berhasil"){
-        echo "
-        <script>
-        document.getElementById('popup-konfirmasi').style.display='flex';
-        </script>
-        ";
-    }
-
-    if($_GET['status']=="gagal"){
-        echo "
-        <script>
-        document.getElementById('popup-salah').style.display='flex';
-        </script>
-        ";
-    }
-
-}
-
-?>
 </body>
 </html>
