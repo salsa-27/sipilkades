@@ -4,23 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sistem Pemilihan Kepala Desa - Limpung</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 <style>
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
     font-family:'Poppins', sans-serif;
 }
-
 body{
     background-color:#C8D9E6;
     min-height:100vh;
 }
-
 header{
     background-color:#2F4156;
     color:white;
@@ -29,43 +24,35 @@ header{
     justify-content:space-between;
     align-items:center;
 }
-
 .logo-section{
     display:flex;
     align-items:center;
     gap:12px;
 }
-
 .logo-section img{
     width:50px;
 }
-
 .header-text h1{
     font-size:18px;
     text-transform:uppercase;
     line-height:20px;
 }
-
 .header-text p{
     font-size:12px;
     color:#D9E4EC;
 }
-
 .header-right{
     display:flex;
     align-items:center;
     gap:10px;
 }
-
 .header-right img{
     width:50px;
 }
-
 .header-right h2{
     font-size:14px;
     line-height:18px;
 }
-
 main{
     flex:1;
     display:flex;
@@ -73,7 +60,6 @@ main{
     justify-content:center;
     padding:40px;
 }
-
 .container{
     width:100%;
     max-width:1200px;
@@ -82,38 +68,32 @@ main{
     align-items:center;
     gap:60px;
 }
-
 .content-left{
     flex:1;
 }
-
 .content-left img{
     width:100%;
     max-width:420px;
     margin-bottom:25px;
 }
-
 .content-left h2{
     color:#2F4156;
     font-size:50px;
     line-height:58px;
     margin-bottom:10px;
 }
-
 .period{
     font-size:24px;
     font-weight:700;
     color:#34495e;
     margin-bottom:12px;
 }
-
 .description{
     color:#5C6773;
     font-size:22px;
     line-height:34px;
     max-width:520px;
 }
-
 .login-card{
     background:white;
     padding:45px;
@@ -121,25 +101,21 @@ main{
     box-shadow:0 10px 30px rgba(0,0,0,0.12);
     width:430px;
 }
-
 .login-card h2{
     text-align:center;
     color:#2F4156;
     font-size:42px;
     margin-bottom:5px;
 }
-
 .login-card p{
     text-align:center;
     color:#7f8c8d;
     font-size:15px;
     margin-bottom:35px;
 }
-
 .form-group{
     margin-bottom:22px;
 }
-
 .form-group label{
     display:block;
     margin-bottom:10px;
@@ -147,7 +123,6 @@ main{
     font-weight:500;
     color:#2F4156;
 }
-
 .form-group input{
     width:100%;
     padding:15px 20px;
@@ -156,11 +131,9 @@ main{
     outline:none;
     font-size:15px;
 }
-
 .form-group input:focus{
     border-color:#2F4156;
 }
-
 .btn-login{
     width:100%;
     padding:15px;
@@ -174,61 +147,71 @@ main{
     margin-top:10px;
     transition:0.3s;
 }
-
 .btn-login:hover{
     background:#222;
 }
-
 @media(max-width:900px){
-
     .container{
         flex-direction:column;
         text-align:center;
     }
-
     .description{
         margin:auto;
     }
-
     .login-card{
         width:100%;
         max-width:430px;
     }
-
     .content-left h2{
         font-size:40px;
         line-height:48px;
     }
 }
+.popup{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
 
+.popup-box{
+    background:white;
+    width:450px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+}
+
+.button-group{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:20px;
+}
 </style>
 </head>
-
 <body>
-
 <header>
-
     <div class="logo-section">
-
         <img src="logo voting.png">
-
         <div class="header-text">
             <h1>Desa Limpung</h1>
             <p>DESA LIMPUNG</p>
         </div>
     </div>
-
     <div class="header-right">
-
         <img src="logo pilkades.png">
-
         <h2>
             SISTEM PEMILIHAN<br>
             KEPALA DESA
         </h2>
-
     </div>
-
 </header>
 
 <main>
@@ -277,6 +260,101 @@ main{
 </div>
 
 </main>
+<!-- POPUP KONFIRMASI -->
 
+<div id="popup-konfirmasi" class="popup">
+
+    <div class="popup-box">
+
+        <h3>Selamat Datang, Irene Alesya!</h3>
+
+        <h1>Konfirmasi akun Anda!</h1>
+
+        <p>
+            Yakin ingin mengkonfirmasi akun ini?
+            Mohon pastikan data Anda sudah benar.
+        </p>
+
+        <img src="fotoooo.jpeg" width="100">
+
+        <div class="button-group">
+
+            <button
+            onclick="window.location.href='halaman3.php'">
+            KONFIRMASI
+            </button>
+
+            <button
+            onclick="tutupKonfirmasi()">
+            BATAL
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- POPUP DATA SALAH -->
+
+<div id="popup-salah" class="popup">
+
+    <div class="popup-box">
+
+        <h2>⚠</h2>
+
+        <p>Data tidak ditemukan!</p>
+
+        <p>
+            Pastikan NIK atau kode pilih
+            yang kamu masukkan sudah benar
+        </p>
+
+        <button
+        onclick="tutupSalah()">
+        COBA LAGI
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function tutupKonfirmasi(){
+    document.getElementById("popup-konfirmasi").style.display="none";
+}
+
+function tutupSalah(){
+    document.getElementById("popup-salah").style.display="none";
+}
+
+</script>
+
+<?php
+
+if(isset($_GET['status'])){
+
+    if($_GET['status']=="berhasil"){
+        echo "
+        <script>
+        document.getElementById('popup-konfirmasi').style.display='flex';
+        </script>
+        ";
+    }
+
+    if($_GET['status']=="gagal"){
+        echo "
+        <script>
+        document.getElementById('popup-salah').style.display='flex';
+        </script>
+        ";
+    }
+
+}
+
+?>
 </body>
 </html>

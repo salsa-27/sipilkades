@@ -25,16 +25,16 @@ $row = $result->fetch_assoc();
 
 // cek apakah email ditemukan
 if ($result->num_rows == 0) {
-  header("location:datasalah.php");
-  exit(); // langsung akhiri eksekusi tanpa harus lanjut ke bawah
+  header("location:datasalah.php?status=gagal");
+  exit();
 } else {
   if ($_POST['NIK'] == $row['nik'] && $_POST['kode-pilih'] == $row['password']) {
 
-    // echo "Anda berhasil login";
-    header("location:halaman2.php");
+    header("location:halaman2.php?status=berhasil");
+
   } else {
-    // echo "Password atau username salah";
-    header("location:datasalah.php");
+
+    header("location:datasalah.php?status=gagal");
 
   }
 }
