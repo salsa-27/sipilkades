@@ -261,7 +261,9 @@ button:hover{
 
                         <div class="button-area">
                             <button class="vote">Vote Sekarang</button>
+                            <a href="konfirmasi.php" class="btn">DETAIL</a>
                             <button class="back">Kembali</button>
+                            <a href="halaman3.php" class="btn">DETAIL</a>
                         </div>
 
                     </div>

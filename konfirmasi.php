@@ -90,6 +90,7 @@
 
         <div class="button-group">
             <button class="button konfir">KONFIRMASI</button>
+            <a href="hasil-voting.php" class="btn">DETAIL</a>
             
         </div>
     </div>
