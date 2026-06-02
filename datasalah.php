@@ -88,7 +88,7 @@
 
         <div class="button-group">
             <button class="button konfir">COBA LAGI</button>
-            
+            <a href="halaman1.php" class="btn">COBA LAGI</a>
         </div>
     </div>
 
