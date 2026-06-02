@@ -3,7 +3,7 @@ session_start();
 include "config.php";
 
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
-    header("Location: halaman2.php");
+    header("Location: akses-ditolak.php");
     exit();
 }
 
