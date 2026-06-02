@@ -18,8 +18,19 @@ if ($result->num_rows > 0) {
 
     $_SESSION['nama'] = $row['name'];
     $_SESSION['username'] = $row['username'];
+    $_SESSION['is_admin'] = $row['is_admin'];
 
-    header("Location: halaman2.php");
+    // cek admin atau voter
+    if ($row['is_admin'] == 1) {
+
+        header("Location: halaman2.php");
+
+    } else {
+
+        header("Location: datasalah.php");
+
+    }
+
     exit();
 
 } else {

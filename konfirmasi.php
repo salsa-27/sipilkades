@@ -90,7 +90,7 @@
         </p>
 
         <div class="button-group">
-            <a href="hasil-voting.php">
+            <a href="finish.php">
                 <button class="button konfir">KONFIRMASI</button>
             </a>
         </div>
