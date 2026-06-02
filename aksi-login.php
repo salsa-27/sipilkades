@@ -1,40 +1,30 @@
 <?php
+session_start();
 
 include "./config.php";
 
-// ambil data dari form (sesuai name di HTML kamu)
-$nik = $_POST['NIK'];
-$password = $_POST['kode-pilih'];
+$username = $_POST['NIK'];
+$kode = $_POST['kode-pilih'];
 
-// echo $nik;
-// echo $password;
-// exit();
+$query = "SELECT * FROM users 
+          WHERE username='$username' 
+          AND plain_code='$kode'";
 
-// echo $nik;
-// echo $password;
-
-$query = "SELECT * FROM users WHERE username ='".$_POST['NIK']."'";
 $result = $conn->query($query);
-// exit();
 
-// echo $result->num_rows;
-// exit();
-// ambil data
-$row = $result->fetch_assoc();
-// exit();
+if ($result->num_rows > 0) {
 
-// cek apakah email ditemukan
-if ($result->num_rows == 0) {
-  header("location:datasalah.php");
-  exit(); // langsung akhiri eksekusi tanpa harus lanjut ke bawah
+    $row = $result->fetch_assoc();
+
+    $_SESSION['nama'] = $row['name'];
+    $_SESSION['username'] = $row['username'];
+
+    header("Location: halaman2.php");
+    exit();
+
 } else {
-  if ($_POST['NIK'] == $row['nik'] && $_POST['kode-pilih'] == $row['password']) {
 
-    // echo "Anda berhasil login";
-    header("location:halaman2.php");
-  } else {
-    // echo "Password atau username salah";
-    header("location:datasalah.php");
+    header("Location: datasalah.php");
+    exit();
 
-  }
 }

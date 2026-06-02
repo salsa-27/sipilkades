@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -86,8 +90,14 @@
 <body>
 
     <div class="container">
-        <h3 class="welcome">Selamat Datang, Irene Alesya!</h3>
+
+        <h3 class="welcome">
+            Selamat Datang,
+            <?php echo $_SESSION['nama']; ?>!
+        </h3>
+
         <h1>Konfirmasi akun Anda!</h1>
+
         <p>
             Yakin ingin mengkonfirmasi akun ini? Mohon
             pastikan data Anda sudah benar.
@@ -106,6 +116,7 @@
                 <button class="button batal">BATAL</button>
             </a>
         </div>
+
     </div>
 
 </body>
