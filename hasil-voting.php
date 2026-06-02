@@ -13,163 +13,194 @@
     display: flex;
   }
 
-  .sidebar {
-    width: 240px;
-    background-color: #34495e;
-    height: 100vh;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box; 
+  .sidebar{
+    width:220px;
+    height:100vh;
+    background:#2F4156;
+    color:white;
+    position:fixed;
+    display:flex;
+    flex-direction:column;
+    gap:2px;
   }
 
-  .sidebar-header {
-    background-color: #c8d9e6;
-    padding: 15px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-bottom: 1px solid #567C8D;
-    box-sizing: border-box;
+  .logo{
+    display:flex;
+    gap:12px;
+    padding:12px;
+    border-bottom:1px solid #567C8D;
+    background:#C8D9E6;
   }
 
-  .sidebar-header img {
-    width: 50px;
+  .logo img{
+    width:70px;
   }
 
-  .sidebar-header h2 {
-    font-size: 14px;
-    color: #2c3e50;
-    margin: 0;
+  .judul h2{
+    font-size:14px;
+    line-height:16px;
+    margin:0;
+    color:#2F4156;
+    position:relative;
+    top:14px;
   }
 
-  .nav-links {
-    padding: 20px;
-    flex-grow: 1;
+  .menu{
+    padding:22px 22px;
+    cursor:pointer;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:#C8D9E6;
+    font-size:18px;
+    font-weight:500;
+    transition:0.3s;
   }
 
-  .nav-links a {
-    display: block;
-    color: #ecf0f1;
-    padding: 15px 0;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    text-transform: uppercase;
+  .menu:first-of-type{
+    margin-top:30px;
   }
 
-  .logout {
-    padding: 20px;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    text-transform: uppercase;
+  .menu:hover{
+    background:#567C8D;
+    color:white;
+  }
+
+  .logout{
+    margin-top:auto;
+    padding:20px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    color:#F5EFEB;
+    font-size:18px;
+    font-weight:500;
+  }
+
+  .logout:hover{
+    background:#567C8D;
+    color:white;
   }
 
   .main {
-    margin-left: 240px;
-    width: 100%; 
-    padding: 40px;
-    box-sizing: border-box; 
+    margin-left:220px;
+    width:100%;
+    padding:40px;
+    box-sizing:border-box;
   }
 
   h1 {
-    text-align: center;
-    color: #2c3e50;
-    font-size: 48px;
-    margin-bottom: 50px;
-    letter-spacing: 2px;
+    text-align:center;
+    color:#2c3e50;
+    font-size:48px;
+    margin-bottom:50px;
+    letter-spacing:2px;
   }
-  
+
   .cards {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
   }
 
   .card {
-    background-color: #fff;
-    width: 280px;
-    padding: 30px 20px;
-    border-radius: 30px;
-    text-align: center;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    box-sizing: border-box; 
+    background-color:#fff;
+    width:280px;
+    padding:30px 20px;
+    border-radius:30px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,0.1);
+    box-sizing:border-box;
   }
 
   .card img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
   }
 
   .name {
-    font-weight: bold;
-    font-size: 24px;
-    color: #567C8D;
-    margin-bottom: 20px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #aebbc7;
+    font-weight:bold;
+    font-size:24px;
+    color:#567C8D;
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:2px solid #aebbc7;
   }
 
   .percentage {
-    font-weight: bold;
-    font-size: 32px;
-    margin: 0;
-    color: #000;
+    font-weight:bold;
+    font-size:32px;
+    margin:0;
+    color:#000;
   }
 
   .vote-count {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-top: 5px;
+    font-size:20px;
+    font-weight:bold;
+    color:#000;
+    margin-top:5px;
   }
 </style>
 </head>
 <body>
 
 <div class="sidebar">
-  <div class="sidebar-header">
-    <img src="logo pilkades.png" alt="Logo">
-    <h2>SISTEM PEMILIHAN KEPALA DESA</h2>
-  </div>
-  
-  <div class="nav-links">
-    <a href="#">VOTING</a>
-    <a href="#">HASIL VOTING</a>
-  </div>
 
-  <div class="logout">LOG OUT</div>
+    <div class="logo">
+        <img src="logo pilkades.png">
+
+        <div class="judul">
+            <h2>SISTEM</h2>
+            <h2>PEMILIHAN</h2>
+            <h2>KEPALA DESA</h2>
+        </div>
+    </div>
+
+    <div class="menu" onclick="location.href='halaman3.php'">
+        <span>Voting</span>
+    </div>
+
+    <div class="menu" onclick="location.href='hasil-voting.php'">
+        <span>Hasil Voting</span>
+    </div>
+
+    <div class="logout" onclick="location.href='halaman1.php'">
+        <span>Log Out</span>
+    </div>
+
 </div>
 
 <div class="main">
   <h1>HASIL VOTING</h1>
-  
+
   <div class="cards">
+
     <div class="card">
       <img src="agus.jpeg" alt="Agus"/>
       <div class="name">AGUS</div>
       <p class="percentage">0%</p>
       <p class="vote-count">0 Votes</p>
     </div>
-    
+
     <div class="card">
       <img src="bagas.jpeg" alt="Bagas"/>
       <div class="name">BAGAS</div>
       <p class="percentage">0%</p>
       <p class="vote-count">0 Votes</p>
     </div>
-    
+
     <div class="card">
       <img src="jamals.png" alt="Jamal"/>
       <div class="name">JAMAL</div>
       <p class="percentage">0%</p>
       <p class="vote-count">0 Votes</p>
     </div>
+
   </div>
 </div>
 

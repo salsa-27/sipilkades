@@ -78,24 +78,23 @@
 <body>
 
     <div class="container">
-        <i class="hgi hgi-stroke hgi-cancel-01 close"></i>
+        <i class="hgi hgi-stroke hgi-cancel-01 close" onclick="history.back()"></i>
+
         <div class="icon-warning i">
-        <i class="hgi hgi-stroke hgi-alert-02"></i>
+            <i class="hgi hgi-stroke hgi-alert-02"></i>
         </div>
+
         <p>
             Apakah Anda yakin dengan pilihan anda? 
             Pilihan tidak dapat diubah.
         </p>
 
-
         <div class="button-group">
-            <button class="button konfir">KONFIRMASI</button>
-            <a href="hasil-voting.php" class="btn">DETAIL</a>
-            
+            <a href="hasil-voting.php">
+                <button class="button konfir">KONFIRMASI</button>
+            </a>
         </div>
     </div>
 
 </body>
 </html>
-
-

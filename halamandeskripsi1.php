@@ -80,6 +80,11 @@ body{
     font-weight:500;
 }
 
+.logout:hover{
+    background:#567C8D;
+    color:white;
+}
+
 .main-content{
     flex:1;
     margin-left:220px;
@@ -205,15 +210,15 @@ button:hover{
             </div>
         </div>
 
-        <div class="menu">
+        <div class="menu" onclick="location.href='halaman3.php'">
             <span>Voting</span>
         </div>
 
-        <div class="menu">
+        <div class="menu" onclick="location.href='hasil-voting.php'">
             <span>Hasil Voting</span>
         </div>
 
-        <div class="logout">
+        <div class="logout" onclick="location.href='halaman1.php'">
             <span>Log Out</span>
         </div>
 
@@ -260,10 +265,13 @@ button:hover{
                         </ol>
 
                         <div class="button-area">
-                            <button class="vote">Vote Sekarang</button>
-                            <a href="konfirmasi.php" class="btn">DETAIL</a>
-                            <button class="back">Kembali</button>
-                            <a href="halaman3.php" class="btn">DETAIL</a>
+                            <a href="konfirmasi.php">
+                                <button class="vote">Vote Sekarang</button>
+                            </a>
+
+                            <a href="halaman3.php">
+                                <button class="back">Kembali</button>
+                            </a>
                         </div>
 
                     </div>

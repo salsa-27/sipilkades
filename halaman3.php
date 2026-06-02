@@ -87,6 +87,11 @@ body{
     font-weight:500;
 }
 
+.logout:hover{
+    background:#567C8D;
+    color:white;
+}
+
 .main{
     margin-left:220px;
     padding:40px;
@@ -130,6 +135,7 @@ body{
     margin:25px 0;
     color:#567C8D;
 }
+
 .btn{
     display:block;
     margin:60px auto 0;
@@ -187,15 +193,15 @@ body{
         </div>
     </div>
 
-    <div class="menu">
+    <div class="menu" onclick="location.href='halaman3.php'">
         <span>Voting</span>
     </div>
 
-    <div class="menu">
+    <div class="menu" onclick="location.href='hasil-voting.php'">
         <span>Hasil Voting</span>
     </div>
 
-    <div class="logout">
+    <div class="logout" onclick="location.href='halaman1.php'">
         <span>Log Out</span>
     </div>
 

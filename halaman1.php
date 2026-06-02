@@ -172,7 +172,7 @@ main{
 <body>
 <header>
     <div class="logo-section">
-        <img src="logo voting.png">
+        <img src="logo limpung.png">
         <div class="header-text">
             <h1>Desa Limpung</h1>
             <p>DESA LIMPUNG</p>

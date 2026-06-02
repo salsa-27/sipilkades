@@ -87,12 +87,12 @@
 
 
         <div class="button-group">
-            <button class="button konfir">COBA LAGI</button>
-            <a href="halaman1.php" class="btn">COBA LAGI</a>
+            <a href="halaman1.php">
+                <button class="button konfir">COBA LAGI</button>
+            </a>
         </div>
+            
     </div>
 
 </body>
 </html>
-
-

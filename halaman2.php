@@ -98,12 +98,15 @@
         </div>
 
         <div class="button-group">
-            <button class="button konfir">KONFIRMASI</button>
-            <button class="button batal">BATAL</button>
+            <a href="halaman3.php">
+                <button class="button konfir">KONFIRMASI</button>
+            </a>
+
+            <a href="halaman1.php">
+                <button class="button batal">BATAL</button>
+            </a>
         </div>
     </div>
 
 </body>
 </html>
-
-
