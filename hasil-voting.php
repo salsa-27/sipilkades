@@ -1,10 +1,36 @@
 <?php
 session_start();
+include "config.php";
 
 if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
     header("Location: halaman2.php");
     exit();
 }
+
+// Total semua suara
+$total_result = mysqli_query($conn, "SELECT COUNT(*) as total FROM votes");
+$total_data = mysqli_fetch_assoc($total_result);
+$total = $total_data['total'];
+
+// Suara Agus
+$agus_result = mysqli_query($conn, "SELECT COUNT(*) as total FROM votes WHERE option_id = 1");
+$agus_data = mysqli_fetch_assoc($agus_result);
+$suara_agus = $agus_data['total'];
+
+// Suara Bagas
+$bagas_result = mysqli_query($conn, "SELECT COUNT(*) as total FROM votes WHERE option_id = 2");
+$bagas_data = mysqli_fetch_assoc($bagas_result);
+$suara_bagas = $bagas_data['total'];
+
+// Suara Jamal
+$jamal_result = mysqli_query($conn, "SELECT COUNT(*) as total FROM votes WHERE option_id = 3");
+$jamal_data = mysqli_fetch_assoc($jamal_result);
+$suara_jamal = $jamal_data['total'];
+
+// Persentase
+$persen_agus = ($total > 0) ? round(($suara_agus / $total) * 100) : 0;
+$persen_bagas = ($total > 0) ? round(($suara_bagas / $total) * 100) : 0;
+$persen_jamal = ($total > 0) ? round(($suara_jamal / $total) * 100) : 0;
 ?>
 <!DOCTYPE html>
 <html lang="id">
@@ -186,29 +212,30 @@ if (!isset($_SESSION['is_admin']) || $_SESSION['is_admin'] != 1) {
 <div class="main">
   <h1>HASIL VOTING</h1>
 
-  <div class="cards">
+ <div class="cards">
 
     <div class="card">
       <img src="agus.jpeg" alt="Agus"/>
       <div class="name">AGUS</div>
-      <p class="percentage">0%</p>
-      <p class="vote-count">0 Votes</p>
+      <p class="percentage"><?php echo $persen_agus; ?>%</p>
+      <p class="vote-count"><?php echo $suara_agus; ?> Votes</p>
     </div>
 
     <div class="card">
       <img src="bagas.jpeg" alt="Bagas"/>
       <div class="name">BAGAS</div>
-      <p class="percentage">0%</p>
-      <p class="vote-count">0 Votes</p>
+      <p class="percentage"><?php echo $persen_bagas; ?>%</p>
+      <p class="vote-count"><?php echo $suara_bagas; ?> Votes</p>
     </div>
 
     <div class="card">
       <img src="jamals.png" alt="Jamal"/>
       <div class="name">JAMAL</div>
-      <p class="percentage">0%</p>
-      <p class="vote-count">0 Votes</p>
+      <p class="percentage"><?php echo $persen_jamal; ?>%</p>
+      <p class="vote-count"><?php echo $suara_jamal; ?> Votes</p>
     </div>
 
+</div>
   </div>
 </div>
 

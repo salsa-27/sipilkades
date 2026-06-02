@@ -16,21 +16,13 @@ if ($result->num_rows > 0) {
 
     $row = $result->fetch_assoc();
 
+    // simpan data user ke session
     $_SESSION['nama'] = $row['name'];
     $_SESSION['username'] = $row['username'];
     $_SESSION['is_admin'] = $row['is_admin'];
 
-    // cek admin atau voter
-    if ($row['is_admin'] == 1) {
-
-        header("Location: halaman2.php");
-
-    } else {
-
-        header("Location: datasalah.php");
-
-    }
-
+    // semua user masuk ke halaman2
+    header("Location: halaman2.php");
     exit();
 
 } else {

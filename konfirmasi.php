@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+if(isset($_GET['option'])){
+    $_SESSION['option_id'] = $_GET['option'];
+}
+?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -90,7 +97,7 @@
         </p>
 
         <div class="button-group">
-            <a href="finish.php">
+            <a href="proses-voting.php">
                 <button class="button konfir">KONFIRMASI</button>
             </a>
         </div>

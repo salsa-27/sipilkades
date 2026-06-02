@@ -264,10 +264,9 @@ button:hover{
                             <li>Menjaga keamanan, budaya, dan kerukunan warga.</li>
                         </ol>
 
-                        <div class="button-area">
-                            <a href="konfirmasi.php">
-                                <button class="vote">Vote Sekarang</button>
-                            </a>
+                        <a href="konfirmasi.php?option=2">
+                            <button class="vote">Vote Sekarang</button>
+                        </a>
 
                             <a href="halaman3.php">
                                 <button class="back">Kembali</button>

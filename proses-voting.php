@@ -1,3 +1,35 @@
+<?php
+session_start();
+include "config.php";
+
+if(!isset($_SESSION['username']) || !isset($_SESSION['option_id'])){
+    die("Session tidak ditemukan. Silakan login ulang.");
+}
+
+$username = $_SESSION['username'];
+$option_id = $_SESSION['option_id'];
+
+// ambil user id
+$q = mysqli_query($conn, "SELECT id FROM users WHERE username='$username'");
+$user = mysqli_fetch_assoc($q);
+
+$user_id = $user['id'];
+
+// cek sudah voting atau belum
+$cek = mysqli_query($conn, "SELECT * FROM votes WHERE user_id='$user_id'");
+
+if(mysqli_num_rows($cek) == 0){
+
+    mysqli_query(
+        $conn,
+        "INSERT INTO votes (user_id, voting_event_id, option_id)
+         VALUES ('$user_id','1','$option_id')"
+    );
+}
+
+unset($_SESSION['option_id']);
+?>
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
