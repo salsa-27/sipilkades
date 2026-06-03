@@ -120,6 +120,7 @@ unset($_SESSION['option_id']);
         </p>
 
         <div class="button-group">
+            <a href="halaman1.php">
             <button class="button konfir">KEMBALI</button>
         </div>
     </div>
