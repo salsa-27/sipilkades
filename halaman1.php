@@ -215,8 +215,8 @@ main{
         <form action="aksi-login.php" method="POST">
 
             <div class="form-group">
-                <label>NIK</label>
-                <input type="text" id="NIK" name="NIK" placeholder="Masukkan NIK">
+                <label>Username</label>
+                <input type="text" id="USERNAME" name="USERNAME" placeholder="Masukkan Username">
             </div>
             <div class="form-group">
                 <label>Kode Pilih</label>

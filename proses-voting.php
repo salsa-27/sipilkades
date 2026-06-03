@@ -9,13 +9,11 @@ if(!isset($_SESSION['username']) || !isset($_SESSION['option_id'])){
 $username = $_SESSION['username'];
 $option_id = $_SESSION['option_id'];
 
-// ambil user id
 $q = mysqli_query($conn, "SELECT id FROM users WHERE username='$username'");
 $user = mysqli_fetch_assoc($q);
 
 $user_id = $user['id'];
 
-// cek sudah voting atau belum
 $cek = mysqli_query($conn, "SELECT * FROM votes WHERE user_id='$user_id'");
 
 if(mysqli_num_rows($cek) == 0){
