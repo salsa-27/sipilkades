@@ -104,7 +104,7 @@ session_start();
         </p>
 
         <div class="profile">
-            <img src="fotoooo.jpeg" alt="Foto Profil">
+            <img src="profil kosong.jpeg" alt="Foto Profil">
         </div>
 
         <div class="button-group">
